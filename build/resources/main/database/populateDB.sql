@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS musics
+(
+    id    BIGSERIAL PRIMARY KEY ,
+    nameMusic  VARCHAR(200) NOT NULL ,
+    author VARCHAR(254) NOT NULL ,
+    style VARCHAR(20)  NOT NULL
+);

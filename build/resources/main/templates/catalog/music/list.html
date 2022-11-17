@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Catalog</h1>
+<ul>
+    <li data-th-each="music : ${musics}" class="music">
+        <a data-th-href="@{/catalog/musics/{musicId}(musicId=${music.id})}"
+           data-th-text="${music.name}"></a>
+    </li>
+</ul>
+</body>
+</html>
